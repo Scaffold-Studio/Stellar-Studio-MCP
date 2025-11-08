@@ -1,0 +1,44 @@
+{
+  "name": "stellar-studio-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Stellar Studio - provides AI tools for Stellar dApp development",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "stellar-studio-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "setup:claude": "./setup-mcp.sh --claude",
+    "setup:cursor": "./setup-mcp.sh --cursor",
+    "setup:code": "./setup-mcp.sh --code"
+  },
+  "keywords": [
+    "mcp",
+    "stellar",
+    "soroban",
+    "blockchain",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@stellar/stellar-sdk": "^14.1.1",
+    "contract": "link:@stellar/stellar-sdk/contract",
+    "dotenv": "^17.2.3",
+    "reflect-metadata": "^0.2.2",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.24.6"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.15.0",
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@10.17.1"
+}
