@@ -1,12 +1,12 @@
 <div align="center">
 
-![Stellar Studio Banner](./docs/images/stellar-banner.jpeg)
+![Stellar Studio Banner](https://raw.githubusercontent.com/Scaffold-Studio/stellar-studio-brand-assets/main/scaffold-studio-banner.png)
 
 # Stellar Studio MCP Server
 
-**Model Context Protocol Backend for Stellar Smart Contracts**
+**Deploy and command Stellar tokens, NFTs, and DAOs through conversation.**
 
-AI-powered blockchain operations through conversational interface
+Model Context Protocol backend that turns natural language into Stellar contract deployment, operations, and governance flows.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6)](https://www.typescriptlang.org/)
@@ -20,7 +20,7 @@ AI-powered blockchain operations through conversational interface
 
 ## Overview
 
-A Model Context Protocol (MCP) server that enables AI assistants to interact with the Stellar blockchain through natural language commands. The server provides comprehensive smart contract deployment, token operations, NFT management, governance, and registry tools for building Stellar dApps conversationally.
+A Model Context Protocol (MCP) server that enables AI assistants to interact with the Stellar blockchain through natural language commands. The server provides comprehensive smart contract deployment, token operations, NFT management, governance execution, and registry tooling so builders can orchestrate Stellar dApps conversationally.
 
 **What It Does:**
 - Exposes 80+ blockchain operations as MCP tools
@@ -55,6 +55,8 @@ A Model Context Protocol (MCP) server that enables AI assistants to interact wit
 ## Architecture
 
 ### System Design
+
+![MCP Architecture System Design](https://raw.githubusercontent.com/Scaffold-Studio/stellar-studio-brand-assets/main/MCP%20Architecture%20System%20Design.png)
 
 ```mermaid
 graph TB
@@ -126,6 +128,8 @@ sequenceDiagram
 ```
 
 ### Plugin Architecture
+
+![MCP Plugin Architecture](https://raw.githubusercontent.com/Scaffold-Studio/stellar-studio-brand-assets/main/MCP%20Plugin%20Architecture%20Modular%20Plugin%20System%20%2880%2B%20Tools%29.png)
 
 The server uses a modular plugin system for organizing tools by domain:
 
