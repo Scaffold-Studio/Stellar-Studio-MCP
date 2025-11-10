@@ -34,7 +34,7 @@ if (typeof window !== 'undefined') {
 export const networks = {
   standalone: {
     networkPassphrase: "Standalone Network ; February 2017",
-    contractId: "CC7COMIKYOU3WCP5A5UXB7PQ3GXAOXCXDGF4DSTBMSK7JZRHSG75SI7H",
+    contractId: "CDIIBQZ4IBDZBBACU6CRHA7U6OT6PLPBRZKNB4TLPCYURVA4FSF6O3EE",
   }
 } as const
 

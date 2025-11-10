@@ -17,6 +17,9 @@ export const NFTTypeSchema = z.enum([
  * Parameters for deploying an NFT
  */
 export const DeployNFTSchema = z.object({
+  name: z.string().describe('NFT collection name (e.g., "My Cool NFTs")'),
+  symbol: z.string().describe('NFT collection symbol (e.g., "COOL")'),
+  base_uri: z.string().optional().describe('Base URI for NFT metadata (e.g., "https://example.com/nft/")'),
   owner: z.string().describe('Owner address for the NFT contract'),
   admin: z.string().optional().describe('Admin address (for AccessControl NFTs)'),
   manager: z.string().optional().describe('Manager address (for Royalties NFTs)'),

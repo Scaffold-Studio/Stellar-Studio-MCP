@@ -24,12 +24,13 @@ export type WasmTemplate =
 
 /**
  * WASM hashes for all contract templates
+ * Updated Nov 10, 2025 - NFT contracts with custom metadata support
  */
 export const WASM_HASHES: Record<WasmTemplate, string> = {
   // Factory WASM hashes
   master_factory: '708457719cbee1b6be2c4f35e51730af0bedf7d91ad29d80c47a62ab5447f43c',
   token_factory: 'e37433d025c95dc9cb282aae9fe3d08e1f0e7714259061e44eee6b87aae64523',
-  nft_factory: '0e363177016d329e797fb99d54739ec61a8075fd6da9d1cce0ab2c7e1967c532',
+  nft_factory: '2b0c10ecae27ce16660beb0dc7f1e5293ffa945c5ccebdd939d1e886cd7581b3', // ✅ Updated
   governance_factory: 'f8c8ef69b31f9c3c82d8f46bf5a53ef3853118730ef19ec727183e1dc640f80c',
 
   // Token template WASM hashes (used by TokenFactory)
@@ -40,9 +41,10 @@ export const WASM_HASHES: Record<WasmTemplate, string> = {
   fungible_vault: '1e6850d877241dd8e27d5f5173a99b772c9891e1d2f71f5e5f4e8b0dd863b11f',
 
   // NFT template WASM hashes (used by NFTFactory)
-  nft_enumerable: 'cfcb55fb716f2c1d43f6970cb6eabbdf5b919fa9f21dc83eb4a7189966b46b6a',
-  nft_royalties: '48aa20c80a6216facd99eb3f778a82a4451844d289b197c5c1764b0e82b03bfb',
-  nft_access_control: '7bcfa202d9bbc4d46820e0ac70ef2ed6fb69d0a96787aeb3b095b408b594a7b6',
+  // ✅ Updated with metadata support (name, symbol, base_uri parameters)
+  nft_enumerable: 'd5739e25efd08c947c2edba2ee9a45725eae4f101a136b3a6e732f2e40e34e8a',
+  nft_royalties: '20ec5596febd0f5af3acba820acd6215405abb4da5f55abdc1d70411e3e2b1aa',
+  nft_access_control: '4aae4698fd3f60e10ab5d07a89dac06f9bcdc4580c92b4030c352536afdd4164',
 };
 
 /**

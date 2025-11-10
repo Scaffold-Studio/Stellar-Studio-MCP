@@ -46,6 +46,9 @@ export class NFTService {
         manager: params.manager || undefined,
         nft_type: nftType,
         salt,
+        name: params.name || undefined,
+        symbol: params.symbol || undefined,
+        base_uri: params.base_uri || undefined,
       } as NFTConfig;
 
       // Deploy NFT
